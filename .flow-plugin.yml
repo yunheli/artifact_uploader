@@ -1,0 +1,14 @@
+name: Artifact-Uploader
+properties:
+  - name: PLUGIN_ARTIFACT_PATH
+    type: string
+    required: true
+
+image: flowci/plugin-environment:latest
+
+run: |
+  set -e
+  java -jar ./flow-artifact-uploader.jar
+
+build: |
+  mvn clean install -DskipTests=true
