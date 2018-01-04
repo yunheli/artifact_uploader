@@ -43,7 +43,7 @@ public class App {
 
     private final static Logger LOGGER = LoggerFactory.build(App.class);
 
-    private final static String STORAGE_ROUTES = "/storages";
+    private final static String STORAGE_ROUTES = "/local_file_resources";
 
     private final static String ARTIFACT_ROUTES = "/artifacts";
 
